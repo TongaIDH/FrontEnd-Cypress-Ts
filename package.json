@@ -4,10 +4,10 @@
   "main": "index.js",
   "scripts": {
     "chrome:report": "cypress run --browser chrome",
-    "delete:results": "rm -rf cypress/results || true",
+    "complete:flow": "run-s --continue-on-error delete:results chrome:report merge:reports show:report",
+    "delete:results": "(rm -rf cypress/results || true) && (rm -rf mochawesome-report || true) && (rm -rf ./mochawesome.json)",
     "merge:reports": "npx mochawesome-merge 'cypress/results/mochawesome/*.json' > mochawesome.json && npx marge mochawesome.json",
-    "show:report": "PENDING",
-    "complete:flow": "npm-run-all delete:results chrome:report merge:reports"
+    "show:report": "start mochawesome-report/mochawesome.html"
   },
   "author": "",
   "license": "ISC",
