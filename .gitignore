@@ -9,3 +9,4 @@ videos/
 #Exclude Execution Results 
 results/
 mochawesome-report/
+mochawesome.json

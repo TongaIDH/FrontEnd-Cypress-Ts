@@ -13,6 +13,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     experimentalRunAllSpecs: false,
-    // excludeSpecPattern: 'cypress/e2e/examples/2-advanced-examples'
+    excludeSpecPattern: 'cypress/e2e/examples/2-advanced-examples'
   },
 });
