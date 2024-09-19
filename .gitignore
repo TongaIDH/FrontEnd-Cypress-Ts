@@ -1,0 +1,11 @@
+# Exclude Node Modules
+node_modules/
+
+# Exclude Execution Evidence
+downloads/
+screenshots/
+videos/
+
+#Exclude Execution Results 
+results/
+mochawesome-report/
