@@ -1,6 +1,10 @@
 # Modak - Challenge
 
-## Scenario: As a Customer, we want to see if the second item from the second results page when searching for "instax mini" on www.aliexpress.com has at least 1 item to be bought.
+## Scenario: 
+
+As a Customer, we want to see if the second item from the second results page when searching for "instax mini" on www.aliexpress.com has at least 1 item to be bought.
+
+---
 
 ### Commands to run tests
 
@@ -13,6 +17,8 @@
     - **chrome:report** --> Runs the test on chrome browser on headless mode
     - **merge:reports** --> Merge reports into a single JSON report and then convert it to HTML report
     - **show:report** --> Starts chrome browser to view final HTML report
+
+---
 
 ### Implemented Packages
 
