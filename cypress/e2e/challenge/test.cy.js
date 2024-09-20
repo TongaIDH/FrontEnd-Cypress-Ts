@@ -1,6 +1,6 @@
 describe('AliExpress Tests', () => {
     before(() => {
-        // disable Cypress's default behavior of logging all XMLHttpRequests and fetches
+        // Disable Cypress's default behavior of logging all XMLHttpRequests and fetches
         cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
     })
     beforeEach(() => {
@@ -46,6 +46,6 @@ describe('AliExpress Tests', () => {
             .click()
 
         // Asserting that product stock is above 0
-        cy.get('.quantity--info--jnoo_pD > :nth-child(1) > span').invoke('text').then(parseInt).should('be.gt', 0)
+        cy.get('.quantity--info--jnoo_pD > :nth-child(1) > span').invoke('text').then(parseInt).should('be.gte', 1)
     })
 })
