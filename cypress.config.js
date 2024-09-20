@@ -9,10 +9,13 @@ module.exports = defineConfig({
         "json": true
   },
   e2e: {
+    viewportWidth: 1920,
+    viewportHeight: 1080,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: "https://aliexpress.com",
     experimentalRunAllSpecs: false,
-    excludeSpecPattern: 'cypress/e2e/examples/2-advanced-examples'
+    excludeSpecPattern: 'cypress/e2e/examples/**'
   },
 });
