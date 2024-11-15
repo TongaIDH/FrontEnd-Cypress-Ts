@@ -13,4 +13,4 @@ jobs:
             - name: cypress test cases
               uses: cypress-io/github-action@v2.9.7
               with:
-                start: npm run complete:flow
+                start: npm run chrome:report
